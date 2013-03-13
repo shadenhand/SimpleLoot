@@ -76,7 +76,7 @@ public final class simpleloot extends JavaPlugin implements Listener{
                 event.setCancelled(true);
                 b.getWorld().dropItemNaturally(loc,new ItemStack(388,1));
                 b.setType(Material.AIR);
-                }
+				}
             }
         }
 
