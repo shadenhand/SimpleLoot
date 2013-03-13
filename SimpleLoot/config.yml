@@ -1,7 +1,56 @@
 GrassDropsLoot: TRUE
+GrassLoot: 388
+GrassLootQTY: 1
 GrassLootChance: 100
+
 MobsDropLoot: TRUE
+
+CaveSpidersDropLoot: True
+CaveSpiderLoot: 388
+CaveSpiderLootQTY: 1
+CaveSpiderLootChance: 100
+
+CreepersDropLoot: TRUE
+CreeperLoot: 388
+CreeperLootQTY: 1
+CreeperLootChance: 100
+
+EndermenDropLoot: TRUE
+EndermanLoot: 388
+EndermanLootQTY: 1
+EndermanLootChance: 100
+
+PlayersDropLoot: TRUE
+PlayerLoot: 388
+PlayerLootQTY: 1
+PlayerLootChance: 100
+
+SilverfishDropLoot: TRUE
+SilverfishLoot: 388
+SilverfishLootQTY: 1
+SilverfishLootChance: 100
+
+SkeletonsDropLoot: TRUE
+SkeletonLoot: 388
+SkeletonLootQTY: 1
+SkeletonLootChance: 388
+
+SlimeDropLoot: TRUE
+SlimeLoot: 388
+SlimeLootQTY: 1
+SlimeLootChance: 100
+
+SpidersDropLoot: True
+SpiderLoot: 388
+SpiderLootQTY: 1
+SpiderLootChance: 100
+
+WitchsDropLoot: TRUE
+WitchLoot: 388
+WitchLootQTY: 1
+WitchLootChance: 100
+
 ZombiesDropLoot: TRUE
-ZombieLoot: 351
+ZombieLoot: 388
 ZombieLootQTY: 1
 ZombieLootChance: 100
