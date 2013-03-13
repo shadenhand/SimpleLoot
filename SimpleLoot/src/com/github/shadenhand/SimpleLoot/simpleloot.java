@@ -72,7 +72,7 @@ public final class simpleloot extends JavaPlugin implements Listener{
 			// check to see if they're lucky
 			if(rand.nextInt(100)<=percent){    			
 				// dispense prize
-    			p.playSound(loc, org.bukkit.Sound.ORB_PICKUP, 1, 5);
+    			p.playSound(loc, org.bukkit.Sound.ORB_PICKUP, 2, 5);
                 event.setCancelled(true);
                 b.getWorld().dropItemNaturally(loc,new ItemStack(388,1));
                 b.setType(Material.AIR);
