@@ -1,0 +1,7 @@
+GrassDropsLoot: TRUE
+GrassLootChance: 100
+MobsDropLoot: TRUE
+ZombiesDropLoot: TRUE
+ZombieLoot: 351
+ZombieLootQTY: 1
+ZombieLootChance: 100
