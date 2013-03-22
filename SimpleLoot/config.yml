@@ -1,36 +1,132 @@
-GrassDropsLoot: TRUE
-GrassLoot: 388
-GrassLootQTY: 1
-GrassLootChance: 100
+PlantsDropLoot: TRUE
+BrownMushroomDropsLoot: true
+BrownMushroomLoot: 388
+BrownMushroomLootQTY: 1
+BrownMushroomLootChance: 100
+
+DeadBushDropsLoot: true
+DeadBushLoot: 388
+DeadBushLootQTY: 1
+DeadBushLootChance: 100
+
+LongGrassDropsLoot: true
+LongGrassLoot: 388
+LongGrassLootQTY: 1
+LongGrassLootChance: 100
+
+RedMushroomDropsLoot: true
+RedMushroomLoot: 388
+RedMushroomLootQTY: 1
+RedMushroomLootChance: 100
+
+RedRoseDropsLoot: true
+RedRoseLoot: 388
+RedRoseLootQTY: 1
+RedRoseLootChance: 100
+
+YellowFlowerDropsLoot: true
+YellowFlowerLoot: 388
+YellowFlowerLootQTY: 1
+YellowFlowerLootChance: 100
 
 MobsDropLoot: TRUE
 
-CaveSpidersDropLoot: True
+BatDropLoot: True
+BatLoot: 388
+BatLootQTY:1
+BatLootChance:100
+
+BlazeDropLoot: True
+BlazeLoot: 388
+BlazeLootQTY:1
+BlazeLootChance:100
+
+CaveSpiderDropLoot: True
 CaveSpiderLoot: 388
 CaveSpiderLootQTY: 1
 CaveSpiderLootChance: 100
 
-CreepersDropLoot: TRUE
+ChickenDropLoot: True
+ChickenLoot: 388
+ChickenLootQTY:1
+ChickenLootChance:100
+
+CowDropLoot: True
+CowLoot: 388
+CowLootQTY:1
+CowLootChance:100
+
+CreeperDropLoot: TRUE
 CreeperLoot: 388
 CreeperLootQTY: 1
 CreeperLootChance: 100
 
 EndermenDropLoot: TRUE
-EndermanLoot: 388
-EndermanLootQTY: 1
-EndermanLootChance: 100
+EndermenLoot: 388
+EndermenLootQTY: 1
+EndermenLootChance: 100
 
-PlayersDropLoot: TRUE
+EnderDragonDropLoot: True
+EnderDragonLoot: 388
+EnderDragonLootQTY:1
+EnderDragonLootChance:100
+
+GhastDropLoot: True
+GhastLoot: 388
+GhastLootQTY:1
+GhastLootChance:100
+
+GiantDropLoot: True
+GiantLoot: 388
+GiantLootQTY:1
+GiantLootChance:100
+
+IronGolemDropLoot: True
+IronGolemLoot: 388
+IronGolemLootQTY:1
+IronGolemLootChance:100
+
+MagmaCubeDropLoot: True
+MagmaCubeLoot: 388
+MagmaCubeLootQTY:1
+MagmaCubeLootChance:100
+
+MushroomCowDropLoot: True
+MushroomCowLoot: 388
+MushroomCowLootQTY:1
+MushroomCowLootChance:100
+
+OcelotDropLoot: True
+OcelotLoot: 388
+OcelotLootQTY:1
+OcelotLootChance:100
+
+PigDropLoot: True
+PigLoot: 388
+PigLootQTY:1
+PigLootChance:100
+
+PigmenDropLoot: True
+PigmenLoot: 388
+PigmenLootQTY:1
+PigmenLootChance:100
+
+PlayerDropLoot: TRUE
 PlayerLoot: 388
 PlayerLootQTY: 1
 PlayerLootChance: 100
+
+SheepDropLoot: True
+SheepLoot: 388
+SheepLootQTY:1
+SheepLootChance:100
 
 SilverfishDropLoot: TRUE
 SilverfishLoot: 388
 SilverfishLootQTY: 1
 SilverfishLootChance: 100
 
-SkeletonsDropLoot: TRUE
+SkeletonDropLoot: TRUE
 SkeletonLoot: 388
 SkeletonLootQTY: 1
 SkeletonLootChance: 388
@@ -40,17 +136,42 @@ SlimeLoot: 388
 SlimeLootQTY: 1
 SlimeLootChance: 100
 
-SpidersDropLoot: True
+SnowmanDropLoot: True
+SnowmanLoot: 388
+SnowmanLootQTY:1
+SnowmanLootChance:100
+
+SpiderDropLoot: True
 SpiderLoot: 388
 SpiderLootQTY: 1
 SpiderLootChance: 100
 
-WitchsDropLoot: TRUE
+SquidDropLoot: True
+SquidLoot: 388
+SquidLootQTY: 1
+SquidLootChance: 100
+
+VillagerDropLoot: True
+VillagerLoot: 388
+VillagerLootQTY: 1
+VillagerLootChance: 100
+
+WitchDropLoot: TRUE
 WitchLoot: 388
 WitchLootQTY: 1
 WitchLootChance: 100
 
-ZombiesDropLoot: TRUE
+WitherDropLoot: TRUE
+WitherLoot: 388
+WitherLootQTY: 1
+WitherLootChance: 100
+
+WolfDropLoot: TRUE
+WolfLoot: 388
+WolfLootQTY: 1
+WolfLootChance: 100
+
+ZombieDropLoot: TRUE
 ZombieLoot: 388
 ZombieLootQTY: 1
 ZombieLootChance: 100
