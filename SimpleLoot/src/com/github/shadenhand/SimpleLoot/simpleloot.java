@@ -53,7 +53,7 @@ public final class simpleloot extends JavaPlugin implements Listener{
 			break;
 		case BLAZE:
 			Droploot=simpleloot.this.getConfig().getString("BlazeDropLoot");
-			loot=simpleloot.this.getConfig().getInt("BlzeLoot");
+			loot=simpleloot.this.getConfig().getInt("BlazeLoot");
 			qty=simpleloot.this.getConfig().getInt("BlazeLootQTY");
 			chance=simpleloot.this.getConfig().getInt("BlazeLootChance");
 			if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
@@ -62,10 +62,10 @@ public final class simpleloot extends JavaPlugin implements Listener{
 			}
 			break;
 		case CAVE_SPIDER:
-			Droploot=simpleloot.this.getConfig().getString("CaveSpidersDropLoot");
-			loot=simpleloot.this.getConfig().getInt("CaveSpidersLoot");
-			qty=simpleloot.this.getConfig().getInt("CaveSpidersLootQTY");
-			chance=simpleloot.this.getConfig().getInt("CaveSpidersLootChance");
+			Droploot=simpleloot.this.getConfig().getString("CaveSpiderDropLoot");
+			loot=simpleloot.this.getConfig().getInt("CaveSpiderLoot");
+			qty=simpleloot.this.getConfig().getInt("CaveSpiderLootQTY");
+			chance=simpleloot.this.getConfig().getInt("CaveSpiderLootChance");
 			if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
 					event.getDrops().add(new ItemStack(Material.getMaterial(loot),qty));
 					event.getEntity().getWorld().playSound(event.getEntity().getLocation(), org.bukkit.Sound.ORB_PICKUP, 1, 5);
@@ -344,19 +344,19 @@ public final class simpleloot extends JavaPlugin implements Listener{
 	@EventHandler(priority = EventPriority.HIGHEST)
     public void onBlockBreak(BlockBreakEvent event)  {
 		String configcheck = simpleloot.this.getConfig().getString("PlantsDropLoot");		
-		if(configcheck=="true"){
+		if(configcheck.equalsIgnoreCase("true")){
 		Block b=event.getBlock();
 		String Droploot;
 		Location loc = b.getLocation();
 		int loot;
 		int qty;
 		int chance;
-		Random rand= new Random();       
+		Random rand= new Random();
 			switch(b.getType()){		
 			case BROWN_MUSHROOM:
-				Droploot=simpleloot.this.getConfig().getString("BrownMushroomDropLoot");
+				Droploot=simpleloot.this.getConfig().getString("BrownMushroomDropsLoot");
 				loot=simpleloot.this.getConfig().getInt("BrownMushroomLoot");
-				qty=simpleloot.this.getConfig().getInt("BrownMushroomQTY");
+				qty=simpleloot.this.getConfig().getInt("BrownMushroomLootQTY");
 				chance=simpleloot.this.getConfig().getInt("BrownMushroomLootChance");
 				if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
 					b.getWorld().dropItemNaturally(loc,new ItemStack(loot,qty));
@@ -364,9 +364,9 @@ public final class simpleloot extends JavaPlugin implements Listener{
 				}
 				break;
 			case DEAD_BUSH:
-				Droploot=simpleloot.this.getConfig().getString("DeadBushDropLoot");
+				Droploot=simpleloot.this.getConfig().getString("DeadBushDropsLoot");
 				loot=simpleloot.this.getConfig().getInt("DeadBushLoot");
-				qty=simpleloot.this.getConfig().getInt("DeadBushQTY");
+				qty=simpleloot.this.getConfig().getInt("DeadBushLootQTY");
 				chance=simpleloot.this.getConfig().getInt("DeadBushLootChance");
 				if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
 					b.getWorld().dropItemNaturally(loc,new ItemStack(loot,qty));
@@ -374,29 +374,30 @@ public final class simpleloot extends JavaPlugin implements Listener{
 				}
 				break;
 			case LONG_GRASS:
-				Droploot=simpleloot.this.getConfig().getString("LongGrassDropLoot");
+				Droploot=simpleloot.this.getConfig().getString("LongGrassDropsLoot");
 				loot=simpleloot.this.getConfig().getInt("LongGrassLoot");
-				qty=simpleloot.this.getConfig().getInt("LongGrassQTY");
-				chance=simpleloot.this.getConfig().getInt("LongGrassChance");
-				if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
+				qty=simpleloot.this.getConfig().getInt("LongGrassLootQTY");
+				chance=simpleloot.this.getConfig().getInt("LongGrassLootChance");
+				getLogger().info(""+chance);
+				if(Droploot.equalsIgnoreCase("true")){
 					b.getWorld().dropItemNaturally(loc,new ItemStack(loot,qty));
 					b.getWorld().playSound(loc, org.bukkit.Sound.ORB_PICKUP, 1, 5);
 				}
 				break;			
 			case RED_MUSHROOM:
-				Droploot=simpleloot.this.getConfig().getString("RedMushroomDropLoot");
+				Droploot=simpleloot.this.getConfig().getString("RedMushroomDropsLoot");
 				loot=simpleloot.this.getConfig().getInt("RedMushroomLoot");
-				qty=simpleloot.this.getConfig().getInt("RedMushroomQTY");
+				qty=simpleloot.this.getConfig().getInt("RedMushroomLootQTY");
 				chance=simpleloot.this.getConfig().getInt("RedMushroomLootChance");
 				if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
-					b.getWorld().dropItemNaturally(loc,new ItemStack(loot,qty));
+					b.getWorld().dropItemNaturally(loc,new ItemStack(1,1));
 					b.getWorld().playSound(loc, org.bukkit.Sound.ORB_PICKUP, 1, 5);
 				}
 				break;
 			case RED_ROSE:
-				Droploot=simpleloot.this.getConfig().getString("RedRoseDropLoot");
+				Droploot=simpleloot.this.getConfig().getString("RedRoseDropsLoot");
 				loot=simpleloot.this.getConfig().getInt("RedRoseLoot");
-				qty=simpleloot.this.getConfig().getInt("RedRoseQTY");
+				qty=simpleloot.this.getConfig().getInt("RedRoseLootQTY");
 				chance=simpleloot.this.getConfig().getInt("RedRoseLootChance");
 				if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
 					b.getWorld().dropItemNaturally(loc,new ItemStack(loot,qty));
@@ -404,9 +405,9 @@ public final class simpleloot extends JavaPlugin implements Listener{
 				}
 				break;
 			case YELLOW_FLOWER:
-				Droploot=simpleloot.this.getConfig().getString("YellowFlowerDropLoot");
+				Droploot=simpleloot.this.getConfig().getString("YellowFlowerDropsLoot");
 				loot=simpleloot.this.getConfig().getInt("YellowFlowerLoot");
-				qty=simpleloot.this.getConfig().getInt("YellowFlowerQTY");
+				qty=simpleloot.this.getConfig().getInt("YellowFlowerLootQTY");
 				chance=simpleloot.this.getConfig().getInt("YellowFlowerLootChance");
 				if(Droploot.equalsIgnoreCase("true")&&qty!=0&&rand.nextInt(100)<chance){
 					b.getWorld().dropItemNaturally(loc,new ItemStack(loot,qty));
